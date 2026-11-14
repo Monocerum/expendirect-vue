@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'FoglihtenNo07';
+    src:
+        url('/fonts/FoglihtenNo07.otf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freebooter Script';
+    src:
+        url('/fonts/FreebooterScript.ttf') format('truetype');
+    font-display: swap;
+}
+
+.top nav a {
+    font:
+        700 1rem Lato,
+        sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0.3rem 0;
+}
+
+.top nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.top nav a:hover::after,
+.top nav a.active::after {
+    transform: scaleX(1);
+}

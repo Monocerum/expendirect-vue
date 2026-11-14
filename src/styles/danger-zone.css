@@ -1,0 +1,12 @@
+.btn.danger {
+    background: #d32f2f;
+    box-shadow: 0 3px 8px rgba(211, 47, 47, 0.3);
+}
+
+.danger-zone {
+    border-color: #d32f2f;
+}
+
+.danger-zone .btn {
+    margin-top: 1rem;
+}

@@ -1,0 +1,87 @@
+.btn {
+    transition:
+        transform 0.15s,
+        box-shadow 0.2s,
+        filter 0.2s;
+}
+
+.btn:hover:not(:disabled) {
+    filter: brightness(1.08);
+}
+
+.link {
+    transition: opacity 0.2s;
+}
+
+.link:hover {
+    opacity: 0.7;
+    text-decoration-thickness: 2px;
+}
+
+.toggle button:hover:not(.on) {
+    background: var(--primary-light);
+}
+
+.toggle button.on:hover {
+    filter: brightness(1.08);
+}
+
+.periods button:hover:not(.on) {
+    color: var(--primary-dark);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.dd>button:hover,
+.dd li button:hover {
+    background: var(--primary-light);
+}
+
+.tagbtn:hover {
+    background: var(--tint-secondary);
+}
+
+.chip:hover:not(.on) {
+    background: var(--primary-light);
+}
+
+.sw:hover {
+    transform: scale(1.12);
+}
+
+.x {
+    transition: transform 0.2s;
+}
+
+.x:hover {
+    transform: rotate(90deg);
+}
+
+.avatar {
+    transition: box-shadow 0.2s;
+}
+
+.avatar:hover {
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.gear img {
+    transition: transform 0.4s;
+}
+
+.gear:hover img {
+    transform: rotate(60deg);
+}
+
+.burger:hover {
+    filter: brightness(1.1);
+}
+
+.side>button:hover {
+    background: #ffffff30;
+    border-radius: 14px;
+}
+
+.datepick:hover {
+    opacity: 0.7;
+}

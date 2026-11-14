@@ -1,0 +1,4 @@
+.content>.between {
+    position: relative;
+    z-index: 6;
+}

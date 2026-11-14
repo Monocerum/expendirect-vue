@@ -1,0 +1,18 @@
+.excess {
+    border: 1.5px solid #c98a1a;
+    background: #fff8e6;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+}
+
+.excess p {
+    margin: 0.3rem 0;
+}
+
+.excess .chips {
+    margin-top: 0.6rem;
+}
+
+.hist li.credit {
+    color: var(--secondary-dark);
+}

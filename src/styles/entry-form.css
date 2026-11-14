@@ -1,0 +1,116 @@
+.catchip {
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: none;
+    transition:
+        transform 0.15s,
+        box-shadow 0.2s;
+}
+
+.catchip:hover {
+    transform: translateY(-2px);
+}
+
+.catchip.on {
+    box-shadow:
+        0 0 0 2px #fff,
+        0 0 0 4px var(--primary);
+}
+
+.catchip.add {
+    background: transparent;
+    border: 1.5px dashed var(--primary);
+    color: var(--primary);
+}
+
+.tagbtn {
+    background: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 6px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition:
+        background 0.2s,
+        color 0.2s;
+}
+
+.tagbtn.on {
+    background: var(--tint-secondary);
+    border-color: var(--secondary-dark);
+    color: var(--secondary-dark);
+    font-weight: 700;
+}
+
+.tagadd {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.tagadd input {
+    flex: 1;
+}
+
+.minipanel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1rem;
+    border: 1px dashed var(--primary);
+    border-radius: 14px;
+    margin-top: 0.9rem;
+    background: #ffffffb0;
+    animation: pop 0.2s both;
+}
+
+.swatches {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sw {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px var(--border-color);
+}
+
+.sw.on {
+    box-shadow: 0 0 0 3px var(--primary);
+}
+
+input[type='color'] {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.btn.sm {
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.modal>h2 {
+    display: block;
+    font-size: 2rem;
+    text-transform: none;
+    margin: 0 0 1rem;
+}

@@ -1,0 +1,112 @@
+@media (max-width: 1024px) {
+    .top {
+        gap: 1rem;
+    }
+
+    .top nav {
+        gap: 1.1rem;
+    }
+
+    .pie {
+        width: 170px;
+        height: 170px;
+    }
+
+    .split {
+        gap: 1.5rem;
+    }
+
+    .periods {
+        padding-right: 1.2rem;
+    }
+
+    .bal {
+        font-size: 2.8rem;
+    }
+
+    .big-num {
+        font-size: 3rem;
+    }
+
+    .fl {
+        width: 56px;
+    }
+
+    .bars li {
+        grid-template-columns: 7rem 1fr auto;
+    }
+
+    .grow .pie-wrap {
+        align-items: center;
+    }
+
+    .shell {
+        padding-inline: 10%;
+    }
+
+    .card small.lbl {
+        font-size: 0.8rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .entry {
+        grid-template-columns: 18px 1fr;
+        gap: 0.3rem 1rem;
+        align-items: start;
+    }
+
+    .entry>i {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .entry .ename {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .entry .eamt {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .entry .emeta {
+        grid-column: 2;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+
+    .entry .entry-actions {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .content {
+        z-index: 0 !important;
+    }
+
+    .side.open {
+        position: fixed;
+        z-index: 30 !important;
+        top: 0.6rem;
+        bottom: 0.6rem;
+        left: 0.6rem;
+        width: 240px;
+        overflow-y: auto;
+    }
+
+    .scrim {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: color-mix(in srgb, var(--ink) 40%, transparent);
+        z-index: 25;
+    }
+
+    .burger {
+        z-index: 40;
+    }
+}

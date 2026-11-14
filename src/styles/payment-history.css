@@ -1,0 +1,44 @@
+.pay>.hist {
+    grid-column: 1/-1;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.7rem;
+}
+
+.hist summary {
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.hist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 0;
+}
+
+.hist li {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr) auto;
+    gap: 1rem;
+    padding: 0.35rem 0;
+    font-size: 0.9rem;
+}
+
+.hist b {
+    font-weight: 400;
+}
+
+.catchip:disabled {
+    cursor: not-allowed;
+}
+
+.catchip:disabled:not(.on) {
+    opacity: 0.4;
+}
+
+.catchip:disabled:hover {
+    transform: none;
+}

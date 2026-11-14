@@ -1,0 +1,28 @@
+.planrow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 5.5rem auto auto;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: #fff;
+}
+
+.planrow>small,
+.planrow>.linkcats {
+    grid-column: 1/-1;
+}
+
+.linkcats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.late {
+    color: #d32f2f;
+    font-style: normal;
+    font-weight: 700;
+}

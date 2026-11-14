@@ -1,0 +1,75 @@
+.sub {
+    font: 400 1.4rem var(--display);
+    color: var(--secondary);
+    margin: 1.6rem 0 0.2rem;
+    text-transform: uppercase;
+}
+
+.picks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.pick {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: #fff;
+    cursor: pointer;
+    transition:
+        border-color 0.2s,
+        transform 0.15s;
+}
+
+.pick:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.pick input {
+    width: 52px;
+    height: 52px;
+    flex: none;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px var(--border-color);
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pick input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.pick input::-webkit-color-swatch {
+    border: 0;
+    border-radius: 50%;
+}
+
+.pick input::-moz-color-swatch {
+    border: 0;
+    border-radius: 50%;
+}
+
+.pick b {
+    display: block;
+}
+
+.pick small {
+    color: var(--text-muted);
+}
+
+.bill-badge {
+    background: var(--tint-secondary);
+    color: var(--secondary-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+}

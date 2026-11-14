@@ -1,0 +1,55 @@
+.catfilter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.catfilter button {
+    background: transparent;
+    border: 1.5px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 0.5rem 1.1rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition:
+        background 0.2s,
+        color 0.2s,
+        transform 0.15s;
+}
+
+.catfilter button:hover:not(.on) {
+    background: var(--tint-secondary);
+    transform: translateY(-1px);
+}
+
+.catfilter button.on {
+    background: var(--secondary);
+    color: #fff;
+}
+
+.totalcard .bal {
+    margin-top: 0.3rem;
+}
+
+.entry-actions {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.legend li {
+    grid-template-columns: 4rem 36px minmax(0, 1fr) auto auto;
+}
+
+@media (max-width: 700px) {
+    .legend li {
+        grid-template-columns: 3rem 28px minmax(0, 1fr) auto auto;
+        gap: 0.6rem;
+    }
+}
+
+.legend li>.link {
+    justify-self: end;
+}

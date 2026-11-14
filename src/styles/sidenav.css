@@ -1,0 +1,38 @@
+.ico,
+.side img,
+.burger img,
+.gear img {
+    flex: none;
+    display: block;
+    object-fit: contain;
+}
+
+.side img {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+}
+
+.side a {
+    gap: 0;
+    padding: 0.7rem;
+}
+
+.side.open a span {
+    margin-left: 1rem;
+}
+
+.side>button {
+    display: flex;
+    padding: 0.7rem;
+}
+
+@media (min-width: 801px) {
+    .side {
+        width: 72px;
+    }
+
+    .side.open {
+        width: 230px;
+    }
+}

@@ -1,0 +1,60 @@
+.hero {
+    min-height: clamp(280px, 40vw, 400px);
+    padding: 10%;
+    margin-bottom: clamp(1.5rem, 5vw, 4rem);
+}
+
+.shell {
+    padding-top: clamp(1rem, 3vw, 2.5rem);
+    gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+.content {
+    gap: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.grid {
+    gap: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.card {
+    padding: clamp(1.3rem, 3vw, 2.2rem);
+}
+
+.filters {
+    margin: 1rem 0;
+}
+
+.big-num {
+    margin-top: 1.4rem;
+}
+
+.side {
+    transition:
+        width 0.25s ease,
+        transform 0.3s ease;
+}
+
+.side a span {
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition:
+        max-width 0.25s,
+        opacity 0.25s;
+}
+
+.side.open a span {
+    max-width: 150px;
+    opacity: 1;
+}
+
+.burger,
+.scrim {
+    display: none;
+}
+
+.table {
+    grid-template-columns: repeat(5, minmax(105px, 1fr));
+}
